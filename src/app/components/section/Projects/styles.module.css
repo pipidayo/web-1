@@ -1,0 +1,23 @@
+.projects {
+  justify-content: center;
+  display: flex;
+  padding-top: 254px;
+}
+
+.projects h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+}
+
+.projects h1::after {
+  content: '';
+  bottom: 0;
+  position: absolute;
+  height: 4px;
+  background-color: #fdc435;
+  width: 50%;
+}

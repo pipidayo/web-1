@@ -1,27 +1,34 @@
-import React from 'react'
 import styles from './styles.module.css'
 import { ReactNode } from 'react'
+import Link from 'next/link'
 
-export default function Button() {
-  type ButtonProps = {
-    children: ReactNode
-    onClick?: () => void
-    href?: string
-    type?: 'button' | 'submit'
-  }
-  const Button = ({ children, onClick, href, type }: ButtonProps) => {
-    if (href) {
-      return (
-        <a href={href} className='button-link'>
-          {children}
-        </a>
-      )
-    }
+type ButtonProps = {
+  children: ReactNode
+  onClick?: () => void
+  href?: string
+  type?: 'button' | 'submit'
+  target?: string
+  outLine?: boolean
+}
 
+const Button = ({ children, onClick, href, type, outLine }: ButtonProps) => {
+  if (href) {
     return (
-      <button className={styles.button} type={type} onClick={onClick}>
+      <Link
+        href={href}
+        className={`${styles.button} ${outLine && styles.outLine}`}
+        target={'_blank'}
+      >
         {children}
-      </button>
+      </Link>
     )
   }
+
+  return (
+    <button type={type} onClick={onClick}>
+      {children}
+    </button>
+  )
 }
+
+export default Button

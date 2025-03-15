@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.container {
+  max-width: 500px;
+  max-height: 530px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 146px 40px 146px 50px;
+}
+
+.project h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.project p {
+  font-size: 18px;
+  color: rgb(126, 126, 126);
+  font-family: 'Nunito', serif;
+}
