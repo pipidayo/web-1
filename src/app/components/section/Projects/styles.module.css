@@ -2,6 +2,9 @@
   justify-content: center;
   display: flex;
   padding-top: 254px;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
 }
 
 .projects h1 {
@@ -11,13 +14,16 @@
   font-weight: bold;
   font-family: 'Playfair Display', serif;
   position: relative;
+  /* text-align: center; */
 }
 
 .projects h1::after {
   content: '';
-  bottom: 0;
+  bottom: -8px;
   position: absolute;
   height: 4px;
   background-color: #fdc435;
   width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }

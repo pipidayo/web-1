@@ -4,12 +4,10 @@ import OverView from './OverView'
 export default function Projects() {
   return (
     <div className={styles.projects}>
-      <h1>
-        Projects{' '}
-        <div>
-          <OverView />
-        </div>
-      </h1>
+      <h1>Projects</h1>
+      <div>
+        <OverView />
+      </div>
     </div>
   )
 }
