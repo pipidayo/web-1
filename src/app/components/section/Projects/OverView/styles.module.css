@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-.container {
-  max-width: 500px;
-  max-height: 530px;
-}
-
 .project {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
   padding: 146px 40px 146px 50px;
+  width: 500px;
+  height: 530px;
 }
 
 .project h2 {
