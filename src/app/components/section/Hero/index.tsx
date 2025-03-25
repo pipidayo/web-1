@@ -12,7 +12,7 @@ export default function Hero() {
         career. You can add more information on the about page.
       </p>
       <div className={styles.buttonContainer}>
-        <Button href='/projects'>Projects</Button>
+        <Button href='#projects'>Projects</Button>
         <Button href='https://twitter.com' target='_blank' outLine>
           Twitter
         </Button>

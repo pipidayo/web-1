@@ -18,3 +18,7 @@
   gap: 48px;
   font-size: 16px;
 }
+
+html {
+  scroll-behavior: smooth;
+}

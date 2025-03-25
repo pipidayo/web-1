@@ -4,7 +4,7 @@ import ProjectsItem from './ProjectsItem'
 
 export default function Projects() {
   return (
-    <div className={styles.projects}>
+    <section id='projects' className={styles.projects}>
       <h1>Projects</h1>
       <ProjectsItem
         title='Project Name1'
@@ -23,6 +23,6 @@ export default function Projects() {
         description='You can also add in this description the type of the project, if it was for web, mobile, electron.'
         imgSrc={'/images/note.jpg'}
       />
-    </div>
+    </section>
   )
 }
