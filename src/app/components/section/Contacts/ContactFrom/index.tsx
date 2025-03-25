@@ -65,7 +65,7 @@ export default function ContactFrom() {
       {errors.message && <p>{errors.message.message}</p>}
 
       <button className={styles.button} type='submit' disabled={isSubmitting}>
-        {isSubmitting ? '送信中...' : '送信'}
+        {isSubmitting ? '送信中...' : ''}
         Send
       </button>
 
