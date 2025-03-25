@@ -41,21 +41,34 @@ export default function ContactFrom() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
       <label htmlFor='name'>Name</label>
-      <input id='name' {...register('name')} />
+      <input className={styles.textarea} id='name' {...register('name')} />
       {errors.name && <p>{errors.name.message}</p>}
 
-      <label htmlFor='email'>Email:</label>
-      <input id='email' type='email' {...register('email')}></input>
+      <label className={styles.label} htmlFor='email'>
+        Email:
+      </label>
+      <input
+        className={styles.textarea}
+        id='email'
+        type='email'
+        {...register('email')}
+      ></input>
       {errors.email && <p>{errors.email.message}</p>}
 
       <label htmlFor='message'>Message:</label>
-      <textarea id='message' rows={5} {...register('message')} />
+      <textarea
+        className={styles.textarea}
+        id='message'
+        rows={5}
+        {...register('message')}
+      />
       {errors.message && <p>{errors.message.message}</p>}
 
-      <button type='submit' disabled={isSubmitting}>
+      <button className={styles.button} type='submit' disabled={isSubmitting}>
         {isSubmitting ? '送信中...' : '送信'}
         Send
       </button>
+
       {success && <p>送信しました!</p>}
     </form>
   )

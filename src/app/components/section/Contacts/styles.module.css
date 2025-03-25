@@ -1,0 +1,26 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 144px;
+}
+
+.contact h1::after {
+  content: '';
+  bottom: -8px;
+  position: absolute;
+  height: 4px;
+  background-color: #fdc435;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+}
